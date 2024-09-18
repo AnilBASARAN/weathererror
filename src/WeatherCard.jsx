@@ -1,9 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloud,faSun, faCloudRain,faSmog,faCloudBolt} from '@fortawesome/free-solid-svg-icons';
+
 const WEATHER_ICON = {
-    Sunny: <i className="text-orange-400 fa-solid fa-sun"></i>,
-    "Partly Cloudy": <i className="fa-duotone fa-cloud text-slate-400"></i>,
-    Cloudy: <i className="fa-solid fa-clouds text-slate-500"></i>,
-    Rain: <i className="fa-duotone fa-cloud-rain text-slate-400"></i>,
-    Snow: <i className="text-blue-300 fa-solid fa-snowflake"></i>,
+    Sunny: <FontAwesomeIcon icon={faSun} className='text-2xl text-yellow-400' />,
+    "Partly Cloudy": <FontAwesomeIcon icon={faSmog} className='text-2xl text-blue-400'/>,
+    Cloudy: <FontAwesomeIcon icon={faCloud} className='text-2xl text-blue-200'/>,
+    Rain: <FontAwesomeIcon icon={faCloudRain} className='text-2xl text-blue-400' />,
+    Snow: <FontAwesomeIcon icon={faCloudBolt} className='text-2xl text-blue-700'/>,
   };
   
   const WeatherCard = (props) => {
