@@ -1,4 +1,5 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRotateRight,faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import {useState,useEffect} from "react";
 import WeatherCard from "./WeatherCard.jsx";
@@ -36,7 +37,7 @@ const data = await response.json();
         onClick={()=>{
           fetchWeather();
         }}
-        className="absolute top-5 left-5 rounded-lg bg-teal-300 p-2"><i className=" fa-solid fa-rotate-right"></i></button>
+        className="absolute top-5 left-5 rounded-lg bg-teal-300 p-2"><FontAwesomeIcon  icon={faRotateRight} /></button>
       {
         weather && < WeatherCard weather={weather} />
       }
